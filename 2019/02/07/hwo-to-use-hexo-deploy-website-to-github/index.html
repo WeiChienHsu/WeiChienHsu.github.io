@@ -5,20 +5,16 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Kevin Hsu&#39;s personal blog">
     <meta name="keyword" content="">
-    <meta name="theme-color" content="#600090">
-    <meta name="msapplication-navbutton-color" content="#600090">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
-    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
-    <link rel="alternate" type="application/atom+xml" title="Kevin Hsu" href="/atom.xml">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-        How to use Hexo and deploy to GitHub Pages｜Kevin Hsu&#39;s blog
+          How to use Hexo and deploy to GitHub Pages - Kevin Hsu&#39;s blog
         
     </title>
 
@@ -27,24 +23,91 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/blog-style.css">
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
 
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/donate.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
 </head>
 
-<style>
 
-    header.intro-header {
-        background-image: url('')
-    }
-</style>
 <!-- hack iOS CSS :active style -->
-<body ontouchstart="" class="animated fadeIn">
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost="true" data-istags="false
-" data-ishome="false">
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('/img/article_header/article_bg.jpg')
+            /*post*/
+        
+    }
+    
+</style>
+
+
+<header class="intro-header">
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#Developer" title="Developer">Developer</a>
+                            
+                        </div>
+                        <h1>How to use Hexo and deploy to GitHub Pages</h1>
+                        <h2 class="subheading">Build up your first personal website.</h2>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top" style="background-color: rgba(255, 255, 255, 0.98); position: fixed; box-shadow: 0 0 10px rgba(14, 14, 14, .26); color: black">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -54,12 +117,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand animated pulse" href="/">
-                <span class="brand-logo">
-                    Kevin Hsu
-                </span>
-                's Blog
-            </a>
+            <a class="navbar-brand" href="/">WE TOGETHER</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,46 +126,40 @@
             so, when navbar scale out, the <nav> will cover tags.
             also mask any touch event of tags, unfortunately.
         -->
-        <!-- /.navbar-collapse -->
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Home</a>
                     </li>
-					
+
                     
+
                         
-							
-								
-							
-						
-                    
-                        
-							
                         <li>
-                            <a href="/tags/">tags</a>
+                            <a href="/about/">about</a>
                         </li>
-							
-						
-                    
                         
-							
+                    
+
+                        
                         <li>
                             <a href="/projects/">projects</a>
                         </li>
-							
-						
+                        
                     
-					
-					
-						<li>
-							<a href="/about">About</a>
-						</li>
-					
+
+                        
+                        <li>
+                            <a href="/tags/">tags</a>
+                        </li>
+                        
+                    
+                    
                 </ul>
             </div>
         </div>
+        <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
 </nav>
@@ -115,7 +167,7 @@
     // Drop Bootstarp low-performance Navbar
     // Use customize navbar with high-quality material design animation
     // in high-perf jank-free CSS3 implementation
-//    var $body   = document.body;
+    var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
@@ -140,113 +192,65 @@
     }
 </script>
 
-<!-- Main Content -->
 
-<!--only post-->
-
-
-<img class="wechat-title-img" src="">
-
-
-<style>
-    
-    header.intro-header {
-        background-image: url('')
-    }
-
-    
-</style>
-
-<header class="intro-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <div class="post-heading">
-                    <h1>How to use Hexo and deploy to GitHub Pages</h1>
-                    
-                    <h2 class="subheading">Build up your first personal website.</h2>
-                    
-                    <!-- <span class="meta">
-                         Author Kevin Hsu
-                        <span>
-                          Date 2019-02-07
-                         </span>
-                    </span>
-                    <div class="tags text-center">
-                        
-                        <a class="tag" href="/tags/#Developer"
-                           title="Developer">Developer</a>
-                        
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="post-title-haojen">
-        <span>
-            How to use Hexo and deploy to GitHub Pages
-        </span>
-    </div>
-</header>
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
 
 <!-- Post Content -->
 <article>
     <div class="container">
         <div class="row">
+
             <!-- Post Container -->
-            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
                 <p>Having a personal website gives you a platform to connect with the world.<br>Another benefit of having a personal website is to luxury of connecting to the world.<br>Your website can be accessed from any part of the world.</p>
 <hr>
-<h3 id="1-Install-Hexo"><a href="#1-Install-Hexo" class="headerlink" title="1. Install Hexo"></a>1. Install Hexo</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 0.1.9</span><br><span class="line">os: Darwin 14.3.0 darwin x64</span><br><span class="line">http_parser: 2.3</span><br><span class="line">node: 0.12.7</span><br><span class="line">v8: 3.28.71.19</span><br><span class="line">uv: 1.6.1</span><br><span class="line">zlib: 1.2.8</span><br><span class="line">modules: 14</span><br><span class="line">openssl: 1.0.1p</span><br></pre></td></tr></table></figure>
-<h3 id="2-Create-a-project-for-your-GitHub-Pages"><a href="#2-Create-a-project-for-your-GitHub-Pages" class="headerlink" title="2. Create a project for your GitHub Pages"></a>2. Create a project for your GitHub Pages</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo init yt8yt.github.io</span><br><span class="line">INFO  Copying data to ~/***/yt8yt.github.io</span><br><span class="line">INFO  You are almost done! Don&apos;t forget to run &apos;npm install&apos; before you start blogging with Hexo!</span><br><span class="line"></span><br><span class="line">$ cd yt8yt.github.io</span><br><span class="line"></span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<h3 id="3-Run-a-test-server-for-your-page-on-Mac"><a href="#3-Run-a-test-server-for-your-page-on-Mac" class="headerlink" title="3. Run a test server for your page on Mac"></a>3. Run a test server for your page on Mac</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-<h3 id="4-Set-information-for-your-new-blog"><a href="#4-Set-information-for-your-new-blog" class="headerlink" title="4. Set information for your new blog"></a>4. Set information for your new blog</h3><p><a href="https://hexo.io/docs/configuration.html" target="_blank" rel="noopener">https://hexo.io/docs/configuration.html</a><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ vi _config.yml</span><br><span class="line"></span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"># Site</span><br><span class="line">title: yt8yt&apos;s note</span><br><span class="line">subtitle:</span><br><span class="line">description: yt8yt&apos;s personal blog</span><br><span class="line">author: yt8yt</span><br><span class="line">language:</span><br><span class="line">timezone: Japan</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</span><br><span class="line">url: http://yt8yt.github.io/</span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure></p>
-<h3 id="5-Set-information-to-use-Git"><a href="#5-Set-information-to-use-Git" class="headerlink" title="5. Set information to use Git"></a>5. Set information to use Git</h3><p><a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">https://github.com/hexojs/hexo-deployer-git</a><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ vi _config.yml</span><br><span class="line"></span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yt8yt/yt8yt.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<h3 id="6-Set-“watch”-before-starting-your-work"><a href="#6-Set-“watch”-before-starting-your-work" class="headerlink" title="6. Set “watch” before starting your work"></a>6. Set “watch” before starting your work</h3><p>“watch” command can monitor your files.<br><a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">https://hexo.io/docs/generating.html</a><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo generate --watch</span><br></pre></td></tr></table></figure></p>
-<h3 id="7-Create-a-new-post-file"><a href="#7-Create-a-new-post-file" class="headerlink" title="7. Create a new post file"></a>7. Create a new post file</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new first-post</span><br><span class="line">INFO  Created: ~/***/yt8yt.github.io/source/_posts/first-post.md</span><br></pre></td></tr></table></figure>
-<h3 id="8-Edit-the-above-file-with-Markdown-or-Hexo’s-Helper"><a href="#8-Edit-the-above-file-with-Markdown-or-Hexo’s-Helper" class="headerlink" title="8. Edit the above file with Markdown or Hexo’s Helper"></a>8. Edit the above file with Markdown or Hexo’s Helper</h3><p>Hexo’s Helper<br><a href="https://hexo.io/docs/helpers.html" target="_blank" rel="noopener">https://hexo.io/docs/helpers.html</a><br>I use Atom with “shift + control + m” when I use Markdown :-)<br><a href="https://atom.io/" target="_blank" rel="noopener">https://atom.io/</a></p>
-<h3 id="9-Delete-“source-posts-hello-world-md”"><a href="#9-Delete-“source-posts-hello-world-md”" class="headerlink" title="9. Delete “source/_posts/hello-world.md”"></a>9. Delete “source/_posts/hello-world.md”</h3><p>It’s not necessary to deploy.</p>
-<h3 id="10-Deploy-your-new-blog"><a href="#10-Deploy-your-new-blog" class="headerlink" title="10. Deploy your new blog!!"></a>10. Deploy your new blog!!</h3><p><a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
+<h3><span id="1-install-hexo">1. Install Hexo</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 0.1.9</span><br><span class="line">os: Darwin 14.3.0 darwin x64</span><br><span class="line">http_parser: 2.3</span><br><span class="line">node: 0.12.7</span><br><span class="line">v8: 3.28.71.19</span><br><span class="line">uv: 1.6.1</span><br><span class="line">zlib: 1.2.8</span><br><span class="line">modules: 14</span><br><span class="line">openssl: 1.0.1p</span><br></pre></td></tr></table></figure>
+<h3><span id="2-create-a-project-for-your-github-pages">2. Create a project for your GitHub Pages</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init yt8yt.github.io</span><br><span class="line">INFO  Copying data to ~/***/yt8yt.github.io</span><br><span class="line">INFO  You are almost done! Don&apos;t forget to run &apos;npm install&apos; before you start blogging with Hexo!</span><br><span class="line"></span><br><span class="line">$ cd yt8yt.github.io</span><br><span class="line"></span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<h3><span id="3-run-a-test-server-for-your-page-on-mac">3. Run a test server for your page on Mac</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<h3><span id="4-set-information-for-your-new-blog">4. Set information for your new blog</span></h3><p><a href="https://hexo.io/docs/configuration.html" target="_blank" rel="noopener">https://hexo.io/docs/configuration.html</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$ vi _config.yml</span><br><span class="line"></span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"># Site</span><br><span class="line">title: yt8yt&apos;s note</span><br><span class="line">subtitle:</span><br><span class="line">description: yt8yt&apos;s personal blog</span><br><span class="line">author: yt8yt</span><br><span class="line">language:</span><br><span class="line">timezone: Japan</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</span><br><span class="line">url: http://yt8yt.github.io/</span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure></p>
+<h3><span id="5-set-information-to-use-git">5. Set information to use Git</span></h3><p><a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">https://github.com/hexojs/hexo-deployer-git</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ vi _config.yml</span><br><span class="line"></span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yt8yt/yt8yt.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<h3><span id="6-set-watch-before-starting-your-work">6. Set “watch” before starting your work</span></h3><p>“watch” command can monitor your files.<br><a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">https://hexo.io/docs/generating.html</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --watch</span><br></pre></td></tr></table></figure></p>
+<h3><span id="7-create-a-new-post-file">7. Create a new post file</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new first-post</span><br><span class="line">INFO  Created: ~/***/yt8yt.github.io/source/_posts/first-post.md</span><br></pre></td></tr></table></figure>
+<h3><span id="8-edit-the-above-file-with-markdown-or-hexos-helper">8. Edit the above file with Markdown or Hexo’s Helper</span></h3><p>Hexo’s Helper<br><a href="https://hexo.io/docs/helpers.html" target="_blank" rel="noopener">https://hexo.io/docs/helpers.html</a><br>I use Atom with “shift + control + m” when I use Markdown :-)<br><a href="https://atom.io/" target="_blank" rel="noopener">https://atom.io/</a></p>
+<h3><span id="9-delete-source_postshello-worldmd">9. Delete “source/_posts/hello-world.md”</span></h3><p>It’s not necessary to deploy.</p>
+<h3><span id="10-deploy-your-new-blog">10. Deploy your new blog!!</span></h3><p><a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
 <p>After writting the above command, you can see your new blog on GitHub Pages.<br>http://<strong>**</strong>.github.io/</p>
-<h3 id="11-Change-your-blog-theme"><a href="#11-Change-your-blog-theme" class="headerlink" title="11. Change your blog theme"></a>11. Change your blog theme</h3><p><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">https://github.com/hexojs/hexo/wiki/Themes</a><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">For instance, How to use the following theme.</span><br><span class="line">https://hexo.io/hexo-theme-light/</span><br><span class="line"></span><br><span class="line">## Install it</span><br><span class="line">$ cd yt8yt.github.io</span><br><span class="line">$ git clone git://github.com/tommy351/hexo-theme-light.git themes/light</span><br><span class="line"></span><br><span class="line">## Update the above files</span><br><span class="line">$ themes/light</span><br><span class="line">$ git pull</span><br><span class="line"></span><br><span class="line">## Set information to use the theme</span><br><span class="line">$ cd yt8yt.github.io</span><br><span class="line">$ vi _config.yml</span><br><span class="line"></span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"># Extensions</span><br><span class="line">## Plugins: http://hexo.io/plugins/</span><br><span class="line">## Themes: http://hexo.io/themes/</span><br><span class="line">theme: light</span><br></pre></td></tr></table></figure></p>
-<h3 id="12-Create-a-new-page-file"><a href="#12-Create-a-new-page-file" class="headerlink" title="12. Create a new page file"></a>12. Create a new page file</h3><p><a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">https://hexo.io/docs/writing.html</a><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new page aboutme</span><br><span class="line">INFO  Created: ~/***/yt8yt.github.io/source/aboutme/index.md</span><br><span class="line"></span><br><span class="line">$ cd source/aboutme/</span><br><span class="line"></span><br><span class="line">$ vi index.md</span><br></pre></td></tr></table></figure></p>
-<h3 id="13-Use-“Read-More”"><a href="#13-Use-“Read-More”" class="headerlink" title="13. Use “Read More”"></a>13. Use “Read More”</h3><p>Write <code>&lt;!-- more --&gt;</code> in your articles.  </p>
-<h3 id="14-Use-Plugins"><a href="#14-Use-Plugins" class="headerlink" title="14. Use Plugins"></a>14. Use Plugins</h3><p><a href="https://github.com/hexojs/hexo/wiki/Plugins" target="_blank" rel="noopener">https://github.com/hexojs/hexo/wiki/Plugins</a></p>
+<h3><span id="11-change-your-blog-theme">11. Change your blog theme</span></h3><p><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">https://github.com/hexojs/hexo/wiki/Themes</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">For instance, How to use the following theme.</span><br><span class="line">https://hexo.io/hexo-theme-light/</span><br><span class="line"></span><br><span class="line">## Install it</span><br><span class="line">$ cd yt8yt.github.io</span><br><span class="line">$ git clone git://github.com/tommy351/hexo-theme-light.git themes/light</span><br><span class="line"></span><br><span class="line">## Update the above files</span><br><span class="line">$ themes/light</span><br><span class="line">$ git pull</span><br><span class="line"></span><br><span class="line">## Set information to use the theme</span><br><span class="line">$ cd yt8yt.github.io</span><br><span class="line">$ vi _config.yml</span><br><span class="line"></span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"># Extensions</span><br><span class="line">## Plugins: http://hexo.io/plugins/</span><br><span class="line">## Themes: http://hexo.io/themes/</span><br><span class="line">theme: light</span><br></pre></td></tr></table></figure></p>
+<h3><span id="12-create-a-new-page-file">12. Create a new page file</span></h3><p><a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">https://hexo.io/docs/writing.html</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page aboutme</span><br><span class="line">INFO  Created: ~/***/yt8yt.github.io/source/aboutme/index.md</span><br><span class="line"></span><br><span class="line">$ cd source/aboutme/</span><br><span class="line"></span><br><span class="line">$ vi index.md</span><br></pre></td></tr></table></figure></p>
+<h3><span id="13-use-read-more">13. Use “Read More”</span></h3><p>Write <code>&lt;!-- more --&gt;</code> in your articles.  </p>
+<h3><span id="14-use-plugins">14. Use Plugins</span></h3><p><a href="https://github.com/hexojs/hexo/wiki/Plugins" target="_blank" rel="noopener">https://github.com/hexojs/hexo/wiki/Plugins</a></p>
 
-                <hr>
                 
 
+                <hr>
+                <!-- Pager -->
                 <ul class="pager">
                     
                     
-                    <li class="next">
-                        <a href="/2016/05/26/first-post/" data-toggle="tooltip" data-placement="top" title="First Post">Next Post &rarr;</a>
-                    </li>
+                        <li class="next">
+                            <a href="/2016/05/26/first-post/" data-toggle="tooltip" data-placement="top" title="First Post">Next Post &rarr;</a>
+                        </li>
                     
                 </ul>
 
-                
+                <br>
 
+                <!-- 打赏-->
                 
-
-
-                <!--加入新的评论系统-->
-                
-
-                
+                <!--打赏 -->
 
             </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
 
-            <div class="hidden-xs col-sm-3 toc-col">
-                <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Install-Hexo"><span class="toc-text">1. Install Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Create-a-project-for-your-GitHub-Pages"><span class="toc-text">2. Create a project for your GitHub Pages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Run-a-test-server-for-your-page-on-Mac"><span class="toc-text">3. Run a test server for your page on Mac</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Set-information-for-your-new-blog"><span class="toc-text">4. Set information for your new blog</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Set-information-to-use-Git"><span class="toc-text">5. Set information to use Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-Set-“watch”-before-starting-your-work"><span class="toc-text">6. Set “watch” before starting your work</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-Create-a-new-post-file"><span class="toc-text">7. Create a new post file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-Edit-the-above-file-with-Markdown-or-Hexo’s-Helper"><span class="toc-text">8. Edit the above file with Markdown or Hexo’s Helper</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-Delete-“source-posts-hello-world-md”"><span class="toc-text">9. Delete “source/_posts/hello-world.md”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-Deploy-your-new-blog"><span class="toc-text">10. Deploy your new blog!!</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-Change-your-blog-theme"><span class="toc-text">11. Change your blog theme</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-Create-a-new-page-file"><span class="toc-text">12. Create a new page file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-Use-“Read-More”"><span class="toc-text">13. Use “Read More”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-Use-Plugins"><span class="toc-text">14. Use Plugins</span></a></li></ol>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
+                
             <!-- Sidebar Container -->
-
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
@@ -256,12 +260,10 @@
                 
                 <section>
                     <!-- no hr -->
-                    <h5 class="text-center">
-                        <a href="/tags/">FEATURED TAGS</a>
-                    </h5>
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
-                        <a class="tag" href="/tags/#Developer" title="Developer">Developer</a>
+                       
+                          <a class="tag" href="/tags/#Developer" title="Developer">Developer</a>
                         
                     </div>
                 </section>
@@ -271,7 +273,6 @@
                 
             </div>
         </div>
-
     </div>
 </article>
 
@@ -281,13 +282,49 @@
 
 
 
-<!-- Footer -->
-<!-- Footer -->
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <br>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                 
                 
@@ -321,10 +358,16 @@
 
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; Kevin Hsu 2019
+                    Copyright &copy; Kevin Hsu 2019 
                     <br>
+                    Theme by <a href="http://beantech.org">BeanTech</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://www.huweihuang.com">胡伟煌</a> | 
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=huweihuang&repo=hexo-theme-huweihuang&type=star&count=true">
+                    </iframe>
                 </p>
-
             </div>
         </div>
     </div>
@@ -337,7 +380,8 @@
 <script src="/js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="/js/blog.js"></script>
+<script src="/js/hux-blog.min.js"></script>
+
 
 <!-- async load function -->
 <script>
@@ -350,6 +394,25 @@
       s.parentNode.insertBefore(o, s);
     }
 </script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
 
 <!-- jquery.tagcloud.js -->
 <script>
@@ -367,35 +430,32 @@
 
 <!--fastClick.js -->
 <script>
-    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
         var $nav = document.querySelector("nav");
         if($nav) FastClick.attach($nav);
     })
 </script>
 
 
-
 <!-- Google Analytics -->
+
 
 
 
 <!-- Baidu Tongji -->
 
 
-<!-- swiftype -->
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-  _st('install','','2.0.0');
-</script>
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<!--wechat title img-->
-<img class="wechat-title-img" src="https://scontent.fhou1-2.fna.fbcdn.net/v/t1.0-9/46686053_2112914772094812_3200032471273963520_o.jpg?_nc_cat=109&amp;_nc_ht=scontent.fhou1-2.fna&amp;oh=8248429e98a46e4d182ac7fa0ad0b0b3&amp;oe=5CEE1A3C">
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://weichienhsu.github.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
 </body>
 
 </html>
