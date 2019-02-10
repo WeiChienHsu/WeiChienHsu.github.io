@@ -7,8 +7,24 @@
     </url>
 
     <url>
+        <loc>http://weichienhsu.github.io/2019/02/10/leetcode-longest-substring-without-repeating-characters/</loc>
+        <lastmod>2019-02-10T18:32:02.792Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://weichienhsu.github.io/2019/02/10/leetcode-add-two-number/</loc>
+        <lastmod>2019-02-10T18:31:54.781Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://weichienhsu.github.io/2019/02/10/leetcode-two-sum/</loc>
-        <lastmod>2019-02-10T16:56:49.525Z</lastmod>
+        <lastmod>2019-02-10T18:31:05.673Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
