@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>http://weichienhsu.github.io/2019/02/16/leetcode-word-ladder/</loc>
+        <lastmod>2019-02-16T17:46:50.448Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://weichienhsu.github.io/2019/02/10/leetcode-longest-palindromic-substring/</loc>
+        <lastmod>2019-02-15T04:04:38.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://weichienhsu.github.io/2019/02/14/leetcode-set-matrix-zeros/</loc>
         <lastmod>2019-02-15T03:08:43.445Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -65,14 +81,6 @@
     <url>
         <loc>http://weichienhsu.github.io/2019/02/10/leetcode-add-two-number/</loc>
         <lastmod>2019-02-10T23:37:22.475Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://weichienhsu.github.io/2019/02/10/leetcode-longest-palindromic-substring/</loc>
-        <lastmod>2019-02-10T23:37:17.982Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
