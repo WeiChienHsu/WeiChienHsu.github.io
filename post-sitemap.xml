@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>http://weichienhsu.github.io/2019/02/17/leetcode-min-stack/</loc>
+        <lastmod>2019-02-17T23:07:06.576Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://weichienhsu.github.io/2019/02/16/leetcode-satisfiability-of-equality-equations/</loc>
+        <lastmod>2019-02-16T18:41:40.084Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://weichienhsu.github.io/2019/02/16/leetcode-word-ladder/</loc>
         <lastmod>2019-02-16T17:46:50.448Z</lastmod>
         <changefreq>weekly</changefreq>
